@@ -1,0 +1,22 @@
+apply plugin:'java'
+apply plugin:'war'
+apply plugin:'jetty'
+apply plugin:'eclipse'
+
+repositories{
+	jcenter()
+	mavenCentral()
+}
+
+dependencies{
+	compile 'org.freemarker:freemarker:2.3.20',
+			'org.projectlombok:lombok:1.14.8',
+			'ch.qos.logback:logback-classic:1.1.2',
+			'com.google.code.gson:gson:2.2.4',
+			'org.nutz:nutz:1.b.50',
+			'org.apache.commons:commons-dbcp2:2.0.1',
+			'mysql:mysql-connector-java:5.1.23'
+	providedCompile 'javax.servlet:servlet-api:2.5'
+	testCompile 'junit:junit:4.11'
+			
+}
